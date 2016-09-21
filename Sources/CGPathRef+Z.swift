@@ -15,7 +15,7 @@ import CoreGraphics
 //	PathElement
 //
 
-enum PathElement {
+public enum PathElement {
 	case MoveToPoint(CGPoint)
 	case AddLineToPoint(CGPoint)
 	case AddQuadCurveToPoint(CGPoint, CGPoint)
@@ -32,13 +32,13 @@ internal class Info {
 //	CGPathRef
 //
 
-extension CGPathRef {
+public extension CGPathRef {
 
 	func pathElements() -> [PathElement] {
 		var info = Info()
 
 		CGPathApply(self, &info) { (info, element) -> Void in
-			var info = UnsafeMutablePointer<Info>(info)
+			let info = UnsafeMutablePointer<Info>(info)
 			switch element.memory.type {
 			case .MoveToPoint:
 				let pt = element.memory.points[0]
@@ -74,7 +74,7 @@ extension CGPathRef {
 //	operator ==
 //
 
-func == (lhs: PathElement, rhs: PathElement) -> Bool {
+public func == (lhs: PathElement, rhs: PathElement) -> Bool {
 	switch (lhs, rhs) {
 	case (.MoveToPoint(let a), .MoveToPoint(let b)):
 		return CGPointEqualToPoint(a, b)
