@@ -1,5 +1,7 @@
 # CGPathExt
-Extract CGPathElement(s) from CGPath or CGMutablePath from Swift 
+
+If you like to extract or to examine path components of the CGPath or CGMutablePath.  `CGPathExt` will help you to do that in Swift.  Since 'CGPath' is just an extension of CGPath, you may simply invoke  `pathElements()` against `CGPath`, then it will return the array of path elements.
+
 
 ### Extracting path elements 
 ```.swift
@@ -22,6 +24,9 @@ public enum PathElement {
 ```
 
 ### Code Sample
+
+Here is the sample code of how to examine each path elements in swift.
+
 ```.swift
 import UIKit
 import CoreGraphics
@@ -43,6 +48,7 @@ for pathElement in pathElements {
 
 
 ### Result
+
 ```
 MoveToPoint: (400.0, 150.0))
 AddCurveToPoint: (400.0, 232.842712474619), (310.456949966159, 300.0), (200.0, 300.0)
@@ -52,7 +58,14 @@ AddCurveToPoint: (310.456949966159, 0.0), (400.0, 67.157287525381), (400.0, 150.
 CloseSubpath:
 ```
 
+### Swift Version
+
+```.log
+Xcode Version 8.0 (8A218a)
+Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)
+```
+
 ### License
 The MIT License (MIT)
 
-Copyright (c) 2015 Digital Lynx Systems
+Copyright (c) 2015 Electricwoods LLC, Digital Lynx Systems, Kaz Yoshikawa
