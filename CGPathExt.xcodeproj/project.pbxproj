@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CC49BACF1BC6FB4000198435 /* CGPathRef+Z.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC49BACE1BC6FB4000198435 /* CGPathRef+Z.swift */; settings = {ASSET_TAGS = (); }; };
-		CC49BAD81BC702B000198435 /* CGPathExtTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC49BAC71BC6FA8D00198435 /* CGPathExtTest.swift */; settings = {ASSET_TAGS = (); }; };
+		CC49BACF1BC6FB4000198435 /* CGPathRef+Z.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC49BACE1BC6FB4000198435 /* CGPathRef+Z.swift */; };
+		CC49BAD81BC702B000198435 /* CGPathExtTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC49BAC71BC6FA8D00198435 /* CGPathExtTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,6 +93,7 @@
 				TargetAttributes = {
 					CC49BAC41BC6FA8D00198435 = {
 						CreatedOnToolsVersion = 7.0.1;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -192,6 +193,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -232,6 +234,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.electricwoods.CGPathExtTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 3.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
