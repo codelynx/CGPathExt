@@ -1,3 +1,5 @@
+![swift](https://img.shields.io/badge/swift-3.0-orange.svg) ![license](https://img.shields.io/badge/license-MIT-yellow.svg)
+
 # CGPathExt
 
 If you like to extract or to examine path components of the CGPath or CGMutablePath.  `CGPathExt` will help you to do that in Swift.  Since 'CGPath' is just an extension of CGPath, you may simply invoke  `pathElements()` against `CGPath`, then it will return the array of path elements.
